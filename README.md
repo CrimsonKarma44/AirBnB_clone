@@ -1,4 +1,4 @@
-<center> <h1>HBNB - The Console</h1> </center>
+<center> <h1>AIRBNB - The Console</h1> </center>
 
 This repository contains the initial stage of a student project to build a clone of the AirBnB website. This stage implements a backend interface, or console, to manage program data. Console commands allow the user to create, update, and destroy objects, as well as manage file storage. Using a system of JSON serialization/deserialization, storage is persistent between sessions.This is the first step towards building my first full web application: the AirBnB clone. This first step is very important because it will use what you build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration… 
 
@@ -31,7 +31,7 @@ This repository contains the initial stage of a student project to build a clone
 ```
 3. When this command is run the following prompt should appear:
 ```
-(hbnb)
+(Airbnb)
 ```
 4. This prompt designates you are in the "HBnB" console, there are a variety of commands available once the console program is run.
 
@@ -56,44 +56,44 @@ This repository contains the initial stage of a student project to build a clone
 ###### Example 0: Create an object
 Usage: create <class_name>
 ```
-(hbnb) create BaseModel
+(Airbnb) create BaseModel
 ```
 ```
-(hbnb) create BaseModel
+(Airbnb) create BaseModel
 3aa5babc-efb6-4041-bfe9-3cc9727588f8
-(hbnb)                   
+(Airbnb)                   
 ```
 ###### Example 1: Show an object
 Usage: show <class_name> <class_id>
 ```
-(hbnb) show BaseModel 3aa5babc-efb6-4041-bfe9-3cc9727588f8
+(Airbnb) show BaseModel 3aa5babc-efb6-4041-bfe9-3cc9727588f8
 ```
 ```
-(hbnb) show BaseModel 3aa5babc-efb6-4041-bfe9-3cc9727588f8
+(Airbnb) show BaseModel 3aa5babc-efb6-4041-bfe9-3cc9727588f8
 [BaseModel] (3aa5babc-efb6-4041-bfe9-3cc9727588f8) {'id': '3aa5babc-efb6-4041-bfe9-3cc9727588f8', 'created_at': datetime.datetime(2020, 2, 18, 14, 21, 12, 96959), 
 'updated_at': datetime.datetime(2020, 2, 18, 14, 21, 12, 96971)}
-(hbnb)  
+(Airbnb)  
 ```
 ###### Example 2: Destroy an object
 Usage: destroy <class_name> <class_id>
 ```
-(hbnb) destroy BaseModel 3aa5babc-efb6-4041-bfe9-3cc9727588f8
+(Airbnb) destroy BaseModel 3aa5babc-efb6-4041-bfe9-3cc9727588f8
 ```
 ```
-(hbnb) destroy BaseModel 3aa5babc-efb6-4041-bfe9-3cc9727588f8
-(hbnb) show BaseModel 3aa5babc-efb6-4041-bfe9-3cc9727588f8
+(Airbnb) destroy BaseModel 3aa5babc-efb6-4041-bfe9-3cc9727588f8
+(Airbnb) show BaseModel 3aa5babc-efb6-4041-bfe9-3cc9727588f8
 ** no instance found **
-(hbnb)   
+(Airbnb)   
 ```
 ###### Example 3: Update an object
 Usage: update <class_name> <class_id>
 ```
-(hbnb) update BaseModel b405fc64-9724-498f-b405-e4071c3d857f first_name "person"
+(Airbnb) update BaseModel b405fc64-9724-498f-b405-e4071c3d857f first_name "person"
 ```
 ```
-(hbnb) update BaseModel b405fc64-9724-498f-b405-e4071c3d857f first_name "person"
-(hbnb) show BaseModel b405fc64-9724-498f-b405-e4071c3d857f
+(Airbnb) update BaseModel b405fc64-9724-498f-b405-e4071c3d857f first_name "person"
+(Airbnb) show BaseModel b405fc64-9724-498f-b405-e4071c3d857f
 [BaseModel] (b405fc64-9724-498f-b405-e4071c3d857f) {'id': 'b405fc64-9724-498f-b405-e4071c3d857f', 'created_at': datetime.datetime(2020, 2, 18, 14, 33, 45, 729889), 
 'updated_at': datetime.datetime(2022, 2, 18, 14, 33, 45, 729907), 'first_name': 'person'}
-(hbnb)
+(Airbnb)
 ```
